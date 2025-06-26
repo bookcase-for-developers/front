@@ -14,7 +14,7 @@ function Login() {
     return (
         <div className="login-container">
             <div className="login-card">
-                <h2>로그인</h2>
+                <h2>회원가입 / 로그인</h2>
                 <form onSubmit={handleSubmit} className="login-form">
                     <div className="form-group">
                         <label htmlFor="email">이메일</label>
@@ -39,7 +39,7 @@ function Login() {
                         />
                     </div>
                     <button type="submit" className="login-btn">
-                        로그인
+                        회원가입 / 로그인
                     </button>
                 </form>
             </div>

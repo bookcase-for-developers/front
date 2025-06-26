@@ -70,13 +70,16 @@ function BookCoverList() {
   return (
     <div>
       <div className="book-controls">
-        <input
-          type="text"
-          placeholder="책 제목 또는 저자 검색"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="book-search"
-        />
+        <div className='search'>
+          <input
+            type="text"
+            placeholder="책 제목 또는 저자 검색"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="book-search"
+          />
+          <button className="book-search-btn">검색</button>
+        </div>
         <select value={sort} onChange={(e) => setSort(e.target.value)} className="book-sort">
           <option value="title">제목순</option>
           <option value="author">저자순</option>

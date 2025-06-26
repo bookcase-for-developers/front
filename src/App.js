@@ -4,6 +4,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import BookCoverList from './pages/BookCoverList';
 import Login from './pages/Login';
+import BookDetail from './pages/BookDetail';
+import AddBook from './pages/AddBook';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<BookCoverList />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/book/:id" element={<BookDetail />} />
+          <Route path="/add-book" element={<AddBook />} />
         </Routes>
       </div>
     </Router>
